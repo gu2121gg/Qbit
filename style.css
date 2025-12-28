@@ -1,0 +1,64 @@
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #050505;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Refinado */
+        .glass {
+            background: rgba(15, 15, 15, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .glass-panel {
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid #222;
+        }
+
+        /* Input Styles */
+        .qbit-input {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid #333;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .qbit-input:focus {
+            border-color: #fff;
+            outline: none;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+        }
+
+        /* Animações */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-up { animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+        /* Vídeo Background */
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            filter: grayscale(100%) brightness(0.2) contrast(1.1);
+        }
+
+        /* Upload Zone */
+        .file-drop-zone {
+            border: 2px dashed #333;
+            transition: all 0.2s;
+        }
+        .file-drop-zone:hover {
+            border-color: #666;
+            background: rgba(255,255,255,0.02);
+        }
