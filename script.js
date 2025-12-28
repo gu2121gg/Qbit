@@ -1,6 +1,6 @@
         // --- CONFIGURAÇÃO DA API ---
         // Troque 'localhost' pelo IP da sua VPS HidenCloud quando fizer deploy
-        const API_URL = "zeus.hidencloud.com:24664"; 
+        const API_URL = "https://gu2121gg.github.io/Qbit/"; 
         
         const state = {
             token: localStorage.getItem('qbit_token') || null,
